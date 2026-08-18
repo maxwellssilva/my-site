@@ -253,7 +253,7 @@ footer a {
 }
 
 .page-header {
-    padding: 72px 0 56px;
+    padding: 72px 0 40px;
 }
 
 .page-header h1 {
@@ -316,4 +316,59 @@ footer a {
     .book {
         padding: 24px 0;
     }
+
+    .book {
+        grid-template-columns: 90px 1fr;
+        gap: 20px;
+    }
+
+    .book img {
+        width: 90px;
+    }
+
+    .book h3 {
+        font-size: 18px;
+    }
+}
+
+.book {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 28px;
+    padding: 32px 0;
+    border-top: 1px solid var(--border);
+}
+
+.book img {
+    width: 140px;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+.book-content {
+    max-width: 650px;
+}
+
+.book h3 {
+    margin: 0 0 4px;
+    font-size: 21px;
+}
+
+.book-author {
+    margin: 0 0 16px;
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+.book-content > p:not(.book-author) {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.book a {
+    display: inline-block;
+    margin-top: 8px;
+    color: inherit;
+    font-weight: 600;
 }
